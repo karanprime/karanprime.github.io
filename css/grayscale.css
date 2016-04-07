@@ -281,11 +281,17 @@ a:focus {
 }
 
 .project-section img{
-    height: auto; 
+    height: 30%; 
     width: auto; 
     max-width: 200; 
     max-height: 200;
 }
+
+table#table1 {
+    width:30%; 
+    margin-left:0%; 
+    margin-right:0%;
+  }
 
 .download-section {
     width: 100%;
@@ -311,7 +317,7 @@ a:focus {
     }
 
     .project-section {
-        padding-top: 250px;
+        /*padding-top: 250px;*/
     }
 
     .download-section {
