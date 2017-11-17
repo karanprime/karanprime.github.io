@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Academic</title>
+    <title>Projects on Karan Shah</title>
     <link>https://karanprime.github.io/project/</link>
-    <description>Recent content in Projects on Academic</description>
+    <description>Recent content in Projects on Karan Shah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Karan Shah</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Nov 2017 00:14:01 -0500</lastBuildDate>
     <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>N-Body Migration</title>
+      <link>https://karanprime.github.io/project/test/</link>
+      <pubDate>Thu, 16 Nov 2017 00:14:01 -0500</pubDate>
+      
+      <guid>https://karanprime.github.io/project/test/</guid>
+      <description>&lt;p&gt;Using Barnes Hutt to simulate migration&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Deep Learning</title>

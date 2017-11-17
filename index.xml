@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic on Academic</title>
+    <title>Karan Shah on Karan Shah</title>
     <link>https://karanprime.github.io/</link>
-    <description>Recent content in Academic on Academic</description>
+    <description>Recent content in Karan Shah on Karan Shah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Karan Shah</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>N-Body Migration</title>
+      <link>https://karanprime.github.io/project/test/</link>
+      <pubDate>Thu, 16 Nov 2017 00:14:01 -0500</pubDate>
+      
+      <guid>https://karanprime.github.io/project/test/</guid>
+      <description>&lt;p&gt;Using Barnes Hutt to simulate migration&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gradapps</title>
+      <link>https://karanprime.github.io/post/gradapps/</link>
+      <pubDate>Thu, 16 Nov 2017 00:09:28 -0500</pubDate>
+      
+      <guid>https://karanprime.github.io/post/gradapps/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Example Talk</title>

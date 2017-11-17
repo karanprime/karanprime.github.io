@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>https://karanprime.github.io/project/test/</loc>
+      <lastmod>2017-11-16T00:14:01-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://karanprime.github.io/post/gradapps/</loc>
+      <lastmod>2017-11-16T00:09:28-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://karanprime.github.io/talk/example-talk/</loc>
       <lastmod>2017-01-01T00:00:00-05:00</lastmod>
     </url>
@@ -160,16 +178,6 @@
     
     <url>
     
-      <loc>https://karanprime.github.io/</loc>
-      <lastmod>2017-10-15T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://karanprime.github.io/categories/</loc>
       <priority>0</priority>
     </url>
@@ -219,8 +227,18 @@
     
     <url>
     
+      <loc>https://karanprime.github.io/</loc>
+      <lastmod>2017-10-15T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://karanprime.github.io/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-11-16T00:14:01-05:00</lastmod>
       <priority>0</priority>
     </url>
     
