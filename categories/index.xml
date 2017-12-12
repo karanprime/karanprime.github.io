@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Karan Shah</title>
-    <link>https://karanprime.github.io/categories/</link>
+    <link>http://www.karan.sh/categories/</link>
     <description>Recent content in Categories on Karan Shah</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://karanprime.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.karan.sh/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>https://karanprime.github.io/categories/development/</link>
+      <link>http://www.karan.sh/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://karanprime.github.io/categories/development/</guid>
+      <guid>http://www.karan.sh/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://karanprime.github.io/categories/golang/</link>
+      <link>http://www.karan.sh/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://karanprime.github.io/categories/golang/</guid>
+      <guid>http://www.karan.sh/categories/golang/</guid>
       <description></description>
     </item>
     

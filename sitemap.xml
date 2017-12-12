@@ -3,97 +3,97 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://karanprime.github.io/post/creating-a-new-theme/</loc>
+    <loc>http://www.karan.sh/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/post/migrate-from-jekyll/</loc>
+    <loc>http://www.karan.sh/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/about/</loc>
+    <loc>http://www.karan.sh/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/post/goisforlovers/</loc>
+    <loc>http://www.karan.sh/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/post/hugoisforlovers/</loc>
+    <loc>http://www.karan.sh/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/categories/</loc>
+    <loc>http://www.karan.sh/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://karanprime.github.io/categories/development/</loc>
+    <loc>http://www.karan.sh/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/tags/go/</loc>
+    <loc>http://www.karan.sh/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/tags/golang/</loc>
+    <loc>http://www.karan.sh/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/categories/golang/</loc>
+    <loc>http://www.karan.sh/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/tags/hugo/</loc>
+    <loc>http://www.karan.sh/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/</loc>
+    <loc>http://www.karan.sh/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.karan.sh/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/post/</loc>
+    <loc>http://www.karan.sh/post/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/tags/</loc>
+    <loc>http://www.karan.sh/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/tags/templates/</loc>
+    <loc>http://www.karan.sh/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://karanprime.github.io/tags/themes/</loc>
+    <loc>http://www.karan.sh/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
