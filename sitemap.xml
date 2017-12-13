@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.karan.sh/post/creating-a-new-theme/</loc>
+    <loc>http://www.karan.sh/project/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,7 +13,7 @@
   </url>
   
   <url>
-    <loc>http://www.karan.sh/post/migrate-from-jekyll/</loc>
+    <loc>http://www.karan.sh/project/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -23,12 +23,12 @@
   </url>
   
   <url>
-    <loc>http://www.karan.sh/post/goisforlovers/</loc>
+    <loc>http://www.karan.sh/project/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.karan.sh/post/hugoisforlovers/</loc>
+    <loc>http://www.karan.sh/project/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -39,6 +39,10 @@
   
   <url>
     <loc>http://www.karan.sh/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.karan.sh/cv/</loc>
   </url>
   
   <url>
@@ -88,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://www.karan.sh/post/</loc>
+    <loc>http://www.karan.sh/project/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
