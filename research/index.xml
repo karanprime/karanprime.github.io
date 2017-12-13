@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on Karan Shah</title>
+    <link>http://www.karan.sh/research/</link>
+    <description>Recent content in Researches on Karan Shah</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.karan.sh/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hierarchical Bayesian Model for Cosmic Shear</title>
+      <link>http://www.karan.sh/research/livermore/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.karan.sh/research/livermore/</guid>
+      <description>Still under construction
+Introduction The gravitational lensing of distant galaxies by mass along the line-of-sight is a sensitive probe of both the expansion and structure growth rates of the Universe. The massive amount of data from the Large Synoptic Survey Telescope (LSST) and other surveys can be used to infer the properties of cosmic shear. We describe how Hierarchical Bayesian Models can be used to infer these properties while marginalizing nuisance parameters.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -22,6 +22,16 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title>Hierarchical Bayesian Model for Cosmic Shear</title>
+      <link>http://www.karan.sh/research/livermore/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.karan.sh/research/livermore/</guid>
+      <description>Still under construction
+Introduction The gravitational lensing of distant galaxies by mass along the line-of-sight is a sensitive probe of both the expansion and structure growth rates of the Universe. The massive amount of data from the Large Synoptic Survey Telescope (LSST) and other surveys can be used to infer the properties of cosmic shear. We describe how Hierarchical Bayesian Models can be used to infer these properties while marginalizing nuisance parameters.</description>
+    </item>
+    
+    <item>
       <title>Migrate to Hugo from Jekyll</title>
       <link>http://www.karan.sh/post/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
@@ -67,6 +77,19 @@ More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
  Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>http://www.karan.sh/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.karan.sh/education/</guid>
+      <description> Georgia Institute of Technology Atlanta, GA
+BS in Physics BS in Computer Science (Intelligence and Modeling-Simulation Threads)
+Thesis: Title: “Analysis of Uncertainty in Machine Learned Density Functionals”
+Advisor: Dr. Andrew Medford
+Expected: May 2018 </description>
     </item>
     
   </channel>
