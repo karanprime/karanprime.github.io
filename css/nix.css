@@ -14,6 +14,15 @@ body {
 	padding-top: 70px;
 }
 
+.whoami {
+	background-color: #000000;
+	color: #00ff00;
+	text-align: left;
+	height: 100%;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.2em;
+}
+
 #green-terminal {
 	color: #00ff00;
 }
