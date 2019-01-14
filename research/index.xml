@@ -27,7 +27,8 @@ Introduction The gravitational lensing of distant galaxies by mass along the lin
       <pubDate>Sat, 23 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.karan.sh/research/dftml/</guid>
-      <description>Still under construction Thesis: “Analysis of Uncertainty in Machine Learned Density Functionals”</description>
+      <description>Still under construction
+Density Functional Theory(DFT) is one of the most popular and successful methods for quantum mechanical simulations of matter because of its relatively lower computational costs. While it is formally exact, approximations of eXchange Correlation(XC) functionals have to be made. These calculations are highly time consuming and scale poorly with system size. The prospect of combining computer vision and deep learning is a fundamentally new approach to designing these XC functionals.</description>
     </item>
     
     <item>
@@ -37,6 +38,7 @@ Introduction The gravitational lensing of distant galaxies by mass along the lin
       
       <guid>http://www.karan.sh/research/mlforca/</guid>
       <description>Still under construction
+While cellular automata can be classified manually for small spaces (such as 256 elementary CA), we need more efficient and automatic methods to classify them over bigger spaces. I used unsupervised classifying methods to do so. To make it more effective, I came up with preprocessing functions and feature sets for the classifiers.
 Poster This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
     </item>
     
@@ -47,7 +49,7 @@ Poster This browser does not support PDFs. Please download the PDF to view it: D
       
       <guid>http://www.karan.sh/research/dde/</guid>
       <description>Still under construction
-Introduction Poster This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
+Massive Open Online Courses (MOOCs) are expanding their presence not just for online learners, but also for traditional students in universities. Georgia Institute of Technology runs an EdX (an online MOOC provider) course on CS1301x (Introduction to Python), which is an online course open to non-institutional online learners and traditional students on-campus. Using tools such as MongoDB, we aggregate and analyze the data provided by EdX to determine metrics to define and predict student success.</description>
     </item>
     
     <item>
@@ -56,7 +58,8 @@ Introduction Poster This browser does not support PDFs. Please download the PDF 
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://www.karan.sh/research/groptics/</guid>
-      <description>Still under construction</description>
+      <description>Still under construction
+GrOptics is a detailed simulation program for ray-tracing Cherenkov photons through large arrays of atmospheric Cherenkov telescopes. Shower packages, such as GrISU and CORSIKA , provide Cherenkov pho- tons after conversion to GrISU format. The output to a ROOT file records individual photons striking the camera surface. The package models both VERITAS Davies-Cotton (DC) and Schwarzchild-Coudee (SC, SEGSC) telescopes with all telescope parameters taken from input files. I added new telescope models for the Schwarzschild-Couder Telescope prototype being constructed in Tuscon, Arizona.</description>
     </item>
     
   </channel>
