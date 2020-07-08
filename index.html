@@ -53,43 +53,43 @@
 
 <h3 id="cosmology">Cosmology</h3>
 
-<p>I have been working at Lawrence Livermore National Laboratory(LLNL) under Dr. Michael Schneider since summer 2017. Here is a overview of my projects:</p>
+<p>I have been working at Lawrence Livermore National Laboratory (LLNL) under Dr. Michael Schneider since Summer 2017. Here is a overview of my projects:</p>
 
 <ul>
-<li><p>In Summer 2017, I joined LLNL as a fellow in their Data Science Summer Institute (DSSI). I worked with Dr. Michael Schneider on a Hierarchical Bayesian Model to solve the inverse problem of inferring cosmic shear and intrinsic galaxy properties from data that will be collected by the Large Synoptic Survey Telescope (LSST). I used Probabilistic Graphical Models and wrote MCMC algorithms (Metropolis Hastings within Gibbs) to infer the posterior distribution of cosmic shear and intrinsic ellipticity (shape) from observed galaxies in the weak lensing regime. I am now working on an extended hierarchical model incorporating non-shape galaxy properties like flux, Sersic profile and half light radius along with ellipticity. Our end goal is to determine the multivariate population statistics, including correlations amongst different properties of all four billion galaxies in LSST. I gave a talk on this project in the Bay Area LSST &amp; Machine Learning Meeting at UC Berkeley in December 2018.<br/>
+<li><p>I joined LLNL as a fellow in their Data Science Summer Institute (DSSI). I worked with Dr. Michael Schneider on a Hierarchical Bayesian Model to solve the inverse problem of inferring cosmic shear and intrinsic galaxy properties from data that will be collected by the Large Synoptic Survey Telescope (LSST). I used Probabilistic Graphical Models and wrote MCMC algorithms (Metropolis Hastings within Gibbs) to infer the posterior distribution of cosmic shear and intrinsic ellipticity (shape) from observed galaxies in the weak lensing regime. I am now working on an extended hierarchical model incorporating non-shape galaxy properties like flux, Sersic profile and half light radius along with ellipticity. Our end goal is to determine the multivariate population statistics, including correlations amongst different properties of all four billion galaxies in LSST. I gave a talk on this project in the Bay Area LSST &amp; Machine Learning Meeting at UC Berkeley in December 2018.<br/>
 <a href="/res/LSST_presentation.pdf">Presentation</a>, <a href="/res/MCMC_IUQ_report.pdf">Short Class Report</a>, <a href="/res/LSST_poster.pdf">Old LLNL Symposium Poster</a></p></li>
-<li><p>Gaussian process for cosmological parameter estimation: It has been shown that certain gaussian process kernels are equivalent to infinitely wide deep neural networks while also providing robust uncertainty quantification. Under Dr. Schneider, I am also exploring the use of neural network equivalent gaussian processes (NNGPs) to estimate cosmological parameters (such as ratio of baryonic &quot;normal&quot; matter to dark matter) from observed 3D mass maps of galactic surveys. I am currently testing my pipeline on simulated toy models. The main challenges I face here are efficient representation of 3D volumes and improving gaussian process scalability.</p></li>
+<li><p>Gaussian process for cosmological parameter estimation: It has been shown that certain gaussian process kernels are equivalent to infinitely wide deep neural networks while also providing robust uncertainty quantification. Under Dr. Schneider, I am also exploring the use of neural network equivalent Gaussian Processes (NNGPs) to estimate cosmological parameters (such as ratio of baryonic matter to dark matter) from observed 3D mass maps of galactic surveys. I am currently testing my pipeline on simulated toy models. The main challenges I face here are efficient representation of 3D volumes and improving Gaussian Process scalability.</p></li>
 </ul>
 
-<p>I also briefly worked in the Gravity group at Georgia Tech, on Gaussian processes as surrogates for expensive gravitational wave simulations.</p>
+<p>I also briefly worked in the Gravity group at Georgia Tech, on Gaussian Processes as surrogates for expensive gravitational wave simulations.</p>
 
-<p>During my undergrad, I worked in Otte group at GT on simulation code for large scale cosmic ray showers. I added functionality for adding new telescope models GrOptics. I also wrote scripts to run <em>large scale</em> HPC simulations.
-I received my first President's Undergraduate Research Award(PURA) for this work.<br/>
+<p>During my undergrad, I worked in Otte group at GT on simulation code for large scale cosmic ray showers. I added functionality for creating new telescope models in GrOptics (specifically included Schwarzschild-Couder model for Chernekov Telescope Array). I also wrote scripts to run large scale HPC simulations.
+I received my first President's Undergraduate Research Award (PURA) for this work.<br/>
 <a href="https://github.com/groptics/groptics">GitHub Project Link</a> (I created the GrOptics GitHub account and repo)</p>
 
-<p>Really old: Here’s a freshman year report that I am proud of. I observed the location of sunsets through out the semester and explained the trends.<br/>
+<p>Really old: Here is a freshman year report that I am proud of. I observed the location of sunsets throughout the semester and explained the trends.<br/>
 <a href="/res/Sunset_report.pdf">Link to report</a> (115/100 points)</p>
 
 <hr />
 
 <h3 id="computational-chemistry">Computational Chemistry</h3>
 
-<p>I have been working with Professor Andrew Medford on deep learning approaches to density functional theory since January 2017. For my undergraduate thesis, I focused on the effectiveness of machine learning techniques in finding a unique mapping between the electron density and the exchange-correlation potential of a system. My current project is uncertainty quantification for machine learned surrogate functionals. I have been comparing the performance of neural networks and gaussian process for this regression, and use bootstrap aggregation with an ensemble of weak learners to perform uncertainty quantification. Concurrently, I am building a data management framework to make all stages of the machine learning workflow smoother on the Georgia Tech HPC clusters for the research group. I received my second President's Undergraduate Research Award(PURA) from Georgia Tech for this work in Fall 2017.<br/>
+<p>I have been working with Professor Andrew Medford on deep learning approaches to density functional theory since January 2017. For my undergraduate thesis, I focused on the effectiveness of machine learning techniques in finding a unique mapping between the electron density and the exchange-correlation potential of a system. My current project is uncertainty quantification for machine learned surrogate functionals. I used bootstrap aggregation with an ensemble of weak learners (shallow neural nets) to perform uncertainty quantification. Concurrently, I am building a data management framework to make all stages of the machine learning workflow smoother on the Georgia Tech HPC clusters. I received my second President's Undergraduate Research Award (PURA) from Georgia Tech for this work in Fall 2017.<br/>
 <a href="https://smartech.gatech.edu/handle/1853/61364">Undergraduate Thesis</a></p>
 
-<p>For my <a href="https://www.cc.gatech.edu/~echow/cse8803asc-20.html">Advanced Scientific Computing class</a>, I worked on using neural network equivalent Gaussian processes to solve Schrödinger equation. I used it to solve the ground state energy for 2D electron systems. Works well with robust uncertainty quantification, but suffers from the scalability issues inherent to Gaussian processes.<br/>
+<p>For my <a href="https://www.cc.gatech.edu/~echow/cse8803asc-20.html">Advanced Scientific Computing class</a>, I worked on using neural network equivalent Gaussian Processes to solve the Schrödinger equation. I used it to solve the ground state energy for 2D electron systems. It works well with robust uncertainty quantification, but suffers from the scalability issues inherent to Gaussian Processes.<br/>
 Link to project report: <a href="http://karan.sh/GPNN_schrodingers_equation/">Gaussian Processes and the Schrodinger equation</a></p>
 
 <hr />
 
-<h3 id="ai-interpretability-and-societal-impact">AI Interpretability and societal impact</h3>
+<h3 id="ai-interpretability-societal-impact">AI Interpretability &amp; Societal Impact</h3>
 
-<p>Complimentary to my SciML projects, I am also interested in interpretable machine learning. I feel that the black box nature of current deep models is not ideal. I am looking into robust uncertainty quantification, Bayesian methods, etc. </p>
+<p>Complimentary to my SciML projects, I am also interested in interpretable machine learning. I feel that the black box nature of current deep models is not ideal for scientific discovery. I am looking into robust uncertainty quantification, Bayesian methods, etc. </p>
 
-<p>We recently submitted a paper to <strong>NeurIPS 2020</strong>, on the difference in Fourier spectrum of real and generated images. We demonstrated a low (computational) cost technique to detect synthetic images, which could also be used to interpret GANs and VAEs.<br/>
+<p>Along with collaborators from Texas A&amp;M University, I recently submitted a paper to <strong>NeurIPS 2020</strong>, on the difference in Fourier spectrum of real and generated images. We demonstrated a low (computational) cost technique to detect synthetic images, which could also be used to interpret GANs and VAEs.<br/>
 <a href="https://arxiv.org/abs/1911.06465">arXiv:1911.06465</a></p>
 
-<p>In order to better understand the societal impacts of AI, I am filling the social science gaps in my knowledge. I am currently in the excellent <a href="https://micromasters.mit.edu/dedp/">MIT Micromasters in DEDP program</a>. I am learning about the design of social experiments, which are much more trickier than the computational science experiments I am used to.</p>
+<p>In order to better understand the societal impacts of AI, I am filling the social science gaps in my knowledge. I am currently enrolled in the excellent <a href="https://micromasters.mit.edu/dedp/">MIT Micromasters in Data, Economics and Developmental Policy program</a>. I am learning about the design of social experiments, which are sometimes trickier than the computational science experiments I am used to.</p>
 
 <p>Previously, as a member of the Data Driven Education team, I worked on statistical methods to tailor GT’s pioneering online courses to student performance. In my senior year, I led a team of junior undergrads and we presented one such scheme at the Georgia Tech STEM Education Research Expo.<br/>
 <a href="/res/STEMExpo_poster.pdf">Poster</a></p>
@@ -102,38 +102,38 @@ Link to project report: <a href="http://karan.sh/GPNN_schrodingers_equation/">Ga
 
 <h4 id="neural-cellular-automata">Neural Cellular Automata</h4>
 
-<p>Currently, I am intrigued by <a href="https://distill.pub/2020/growing-ca/">neural cellular automata</a>. I have been playing around with while under lockdown. I will post about my experiments soon.</p>
+<p>Currently, I am intrigued by <a href="https://distill.pub/2020/growing-ca/">neural cellular automata</a>. I have been playing around with it while under lockdown. I will post about my experiments soon.</p>
 
 <h4 id="emergent-phenomena">Emergent Phenomena</h4>
 
-<p>I took a great course on emergent phenomena with <a href="https://people.clarkson.edu/~lschulma/">Prof. L. S. Schulman</a> in Spring 2020. The class consisted of four students and the professor. I learnt about the relevance of statistical mechanics in a wide variety of fields (from finance to syncing fireflies). I gave a presentation of the emergence of Zipf’s laws from simple assumptions about human settlements.<br/>
+<p>I took a great course on emergent phenomena with <a href="https://people.clarkson.edu/~lschulma/">Prof. L. S. Schulman</a> in Spring 2020. The class consisted of four students and the professor. I learnt about the relevance of statistical mechanics in a wide variety of fields (from finance to syncing fireflies). I gave a presentation of the emergence of Zipf’s law from simple assumptions about human settlements.<br/>
 You can find the presentation here: <a href="/res/GROW_presentation.pdf">Cities and Galaxies</a> Note: It ends with <em>aliens</em>.</p>
 
 <h4 id="reservoir-computing">Reservoir Computing</h4>
 
-<p>I worked on “predicting” chaotic systems as a project in my deep learning class. Inspired by this article and the linked papers, I explored the use of reservoir computing for predicting time series. It worked excellently for repeating series, but also worked eerily well for chaotic systems.<br/>
-Draft here: <a href="http://karan.sh/TiamathsPool/">Tiamath's Swimming Pool</a> (plan on going beyond preliminary results someday, sigh)</p>
+<p>I worked on “predicting” chaotic systems as a project in my <a href="https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/">deep learning class</a>. Inspired by <a href="https://www.quantamagazine.org/machine-learnings-amazing-ability-to-predict-chaos-20180418/">this article</a> and the linked papers, I explored the use of reservoir computing for predicting time series. It worked excellently for repeating series, but also worked eerily well for chaotic systems.<br/>
+Draft here: <a href="http://karan.sh/TiamathsPool/">Tiamath's Swimming Pool</a> (plan on going beyond preliminary results some day, sigh)</p>
 
 <h4 id="wolfram-summer-school">Wolfram Summer School</h4>
 
-<p>I was fortunate to be accepted into Wolfram Summer School 2016. It was an intense experience with some of the brightest people I have met. I worked on automatic classification of cellular automata, under Georgia Fortuna, with some advice from Stephen Wolfram. I got inducted in the cult of Mathematica(feels so good when I you solve a complicated problem with a paragraph long one liner which feels great when you write it but takes 20 minutes to decipher when you read it two years later) and functional programming.<br/>
+<p>I was fortunate to be accepted into Wolfram Summer School 2016. It was an intense experience with some of the brightest people I have met. I worked on automatic classification of cellular automata, under Dr. Georgia Fortuna, with some advice from Stephen Wolfram. I got inducted in the cult of Mathematica (feels so good when you solve a complicated problem with a paragraph long one liner, which feels great when you write it, but takes 20 minutes to decipher when you read it two years later) and functional programming.<br/>
 <a href="https://education.wolfram.com/summer/school/alumni/2016/shah/">Alumni Link</a>, <a href="https://github.com/karanprime/mlforca">GitHub Repo</a></p>
 
 <h4 id="migration-modeling">Migration Modeling</h4>
 
-<p>I combined cellular automata (Shelling’s model) and n-body simulation (Barnes-hut algorithm) to model population movement, taking into account multiple factors such as wealth, race etc.<br/>
+<p>I combined cellular automata (Schelling's Segregation Model) and n-body simulation (Barnes-hut algorithm) to model population movement, taking into account multiple factors such as wealth, race etc.<br/>
 <a href="https://github.com/karanprime/MigrationSimulator">GitHub Repo</a></p>
 
 <h4 id="chuas-circuit">Chua's Circuit</h4>
 
-<p>For my electronics class, I made Chua’s circuit. It exhibits chaotic behavior. Looking at phase plots on a three decade old oscillator (because newer digital ones cant handle that) was the highlight of my course. I also wrote a small matlab simulator.<br/>
+<p>For my electronics class, I made Chua’s circuit. It exhibits chaotic behavior. Looking at phase plots on a three decade old oscillator (because newer digital ones can't handle that) was the highlight of my course. I also wrote a small matlab simulator.<br/>
 Here’s a short report:
-<a href="/res/Chua_Circuit_report.pdf">Chua's Circuit: A chaotic analog computer</a></p>
+<a href="/res/Chua_Circuit_report.pdf">Chua's Circuit: A chaotic analog computer</a> (contains pretty phase plots)</p>
 
 <h4 id="cellular-automata-simulator">Cellular Automata Simulator</h4>
 
-<p>I wrote a cellular automata simulator in java for my computational physics class, complete with an arduino implementation on rings and grids of leds.<br/>
-<a href="https://github.com/karanprime/Cellular-Automata-Project">GitHub repo</a> </p>
+<p>I wrote a cellular automata simulator in Java for my computational physics class, complete with an Arduino implementation on rings and grids of LEDs.<br/>
+<a href="https://github.com/karanprime/Cellular-Automata-Project">GitHub repo</a>, <a href="/res/CA_Java_report.pdf">Report</a> </p>
 
 <hr />
 
@@ -151,23 +151,23 @@ Here’s a short report:
 
 <h2 id="service">Service</h2>
 
-<p>I believe that giving back is an important part of a career in science. As a lowly grad student, I try to volunteer whoever I can. Some of the highlights are:</p>
+<p>I believe that giving back is an important part of a career in science. As a lowly grad student, I try to volunteer wherever I can. Some of the highlights are:</p>
 
 <ul>
 <li>Applied to SC2020</li>
-<li>Volunteer at ICML 2020 (remote, IST)</li>
-<li>Volunteer at ICLR 2020, New Orleans</li>
+<li>Volunteered at ICML 2020 (remote, IST)</li>
+<li>Volunteered at ICLR 2020, New Orleans</li>
 <li>Student travel award to WSSSPE 14 in Manchester</li>
 <li>Student travel award to JupyterCon.</li>
 </ul>
 
-<p>I serve as a reviewer for President’s Undergraduate Research Award, in the fields of physics and computer science.</p>
+<p>I serve as a reviewer for President’s Undergraduate Research Award in the fields of physics and computer science.</p>
 
-<p>I was also elected senator from the school of computational science and engineering for 2018-2019 and 2019-2020.</p>
+<p>I was also elected Senator to the Graduate Student Senate from the School of Computational Science &amp; Engineering for 2018-2019 and 2019-2020.</p>
 
 <hr />
 
-<h2 id="tools-i-use">Tools I use</h2>
+<h2 id="tools-i-use">Tools I Use</h2>
 
 <p>In decreasing order of proficiency:</p>
 
@@ -179,13 +179,13 @@ Here’s a short report:
 
 <p><strong>Julia</strong>: More out of intellectual curiosity. It has an active scientific computing community and claims to combine the ease of python with the performance of C.</p>
 
-<p><strong>C, C++</strong>: Used it for GrOptics. For Also for learning HPC (MPI) and my systems and networking classes. I can get things done after many stack overflow look ups.</p>
+<p><strong>C, C++</strong>: Used it for GrOptics. Also for learning HPC (MPI) and my systems and networking classes. I can get things done after many Stack Overflow look ups.</p>
 
-<p><strong>Java</strong>: Language of choice when starting out my degree. Learn OOP on java and C++. Can’t believe I wrote a GUI cellular automata simulator in it a long time ago. Won’t be able to do that today.</p>
+<p><strong>Java</strong>: Language of choice when starting out my degree. Learn OOP on Java and C++. Can’t believe I wrote a GUI cellular automata simulator in it a long time ago. Won’t be able to do that today.</p>
 
 <p><strong>R</strong>: Trying it for my social science classes. It feels like a lower friction way to do statistics than python.</p>
 
-<p><strong>FORTRAN</strong>: Tried it for that one physics professor who wont use anything else. Don’t remember it at all now.</p>
+<p><strong>FORTRAN</strong>: Tried it for that one physics professor who won't use anything else. Don’t remember it at all now.</p>
 
 <h3 id="others">Others</h3>
 
@@ -193,16 +193,20 @@ Here’s a short report:
 
 <p><strong><span class="latex">L<span>a</span>T<span>e</span>X</span></strong>: Documents look beautiful, once I figure out how to put that image below the paragraph I want.</p>
 
-<p><strong>Some HTML/CSS</strong>: Mostly to make personal websites, and to look for Easter eggs on Mr. Robot and Westworld websites. Hugo and Jupyter and Markdown are easier for me. </p>
+<p><strong>Hardware</strong>: I am comfortable with basic electronics and soldering. I like tinkering with Arduino and Raspberry Pi boards. I recently setup a <a href="https://github.com/pi-hole/pi-hole">pi-hole</a> for my home network. I also built my own PC for deep learning and gaming, christened <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">ada</a>.</p>
+
+<p><strong>Some HTML/CSS</strong>: Mostly to make personal websites, and to look for easter eggs on Mr. Robot and Westworld websites. Hugo and Jupyter and Markdown are easier for me. </p>
 
 <hr />
 
 <h2 id="misc">Misc</h2>
 
-<p>In my youth (5 years ago), I experimented with a start up, cryptomen.com (the website is dead, we had some articles about us though). It was five of us scattered throughout North America, and we traded crypto currencies back when bitcoin was about $400. We raised about $47000 from individual investors. I learnt a lot about crypto currencies, dealing with people, marketing and trading stresses.<br/>
+<p>In my youth (6 years ago in 2014), I experimented with a start up, cryptomen.com (the website is dead, we had some articles about us though). It was five of us scattered throughout North America, and we traded crypto currencies back when bitcoin was about $400. We raised about $47000 from individual investors. I learnt a lot about crypto currencies, dealing with people, marketing and trading stresses.<br/>
 <a href="http://cryptomen.com/about-cryptomen/">Dead domain</a>, <a href="https://cointelegraph.com/news/cryptomen-launches-breakthrough-btc-investment-trading-service">an article about us</a></p>
 
-<p>In high school, I made a Jarvis like voice automation system with a friend. This was 2010, before Siri and AWS and home automation were cool. The whole system was made out of junk parts. An ancient desktop with parallel ports was the brain. The parallel port pins were connected to relays which were driving the mains current to various appliances. We used the hilariously bad windows speech recognition to manage some cmd scripts which turned the parallel pins on and off. As stupid teenagers, we had open mains lines on the floor. I am happy to be alive.<br/>
+<p>I also cofounded Georgia Tech's first Cryptocurrency club around that time. We invited people in Atlanta's cryptocurrency scene to give talks at GT, left 3D printed wallets with 0.0000001 BTC at random spots around campus and just spread awareness about cryptocurrencies in general.</p>
+
+<p>In high school, I made a Jarvis like voice automation system with a friend. This was 2010, before Siri and AWS and home automation were cool. The whole system was made out of junk parts. An ancient desktop with a parallel port was the brain. The parallel port pins were connected to relays which were driving the mains current to various appliances. We used the hilariously bad Windows speech recognition to manipulate some cmd scripts which turned the parallel pins on and off. As stupid teenagers, we had open mains lines on the floor. I am happy to be alive.<br/>
 <a href="https://www.youtube.com/watch?v=b5b3MGruSlI">Embarrassing video</a></p>
 
 <h2 id="other-places-on-the-web">Other places on the web</h2>
