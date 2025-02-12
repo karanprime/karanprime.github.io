@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="res/manhattan.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Karan Shah - Physics-Informed ML Research</title>
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -17,8 +17,14 @@
             font-weight: 900;
         }
 
+        html {
+            height: -webkit-fill-available;
+            height: 100%;
+        }
+
         body {
             min-height: 100vh;
+            min-height: -webkit-fill-available;
             display: flex;
             flex-direction: column;
             background: #0a0a0a;
@@ -27,6 +33,7 @@
             overflow: hidden;
             line-height: 1.6;
             font-size: 16px;
+            padding-bottom: env(safe-area-inset-bottom);
         }
 
         canvas {
@@ -46,6 +53,8 @@
             align-items: center;
             position: relative;
             z-index: 2;
+            padding: 1rem;
+            min-height: 0;
         }
 
         .content {
@@ -138,6 +147,7 @@
             padding: 1rem;
             margin-top: auto;
             font-size: 0.9rem;
+            padding-bottom: max(1rem, env(safe-area-inset-bottom));
         }
         
         .footer-content {
@@ -161,6 +171,14 @@
         }
 
         @media (max-width: 600px) {
+            .main-container {
+                padding-bottom: 4rem;
+            }
+            
+            .content {
+                margin-bottom: auto;
+            }
+
             h1 {
                 font-size: 1.75rem;
             }
@@ -187,6 +205,20 @@
             }
 
             .footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.9);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+            }
+
+            .footer-content {
+                background: transparent;
+            }
+
+            .footer {
                 font-size: 0.8rem;
             }
         }
@@ -194,6 +226,13 @@
         @media (max-width: 360px) {
             .links {
                 gap: 0.5rem;
+            }
+        }
+
+        /* Handle devices with notches and home indicators */
+        @supports (padding: max(0px)) {
+            .footer {
+                padding-bottom: max(1rem, env(safe-area-inset-bottom));
             }
         }
     </style>
@@ -337,21 +376,5 @@
         const game = new GameOfLife(canvas);
         game.start();
     </script>
-
-    <!-- Default Statcounter code -->
-    <script type="text/javascript">
-        var sc_project=11601377; 
-        var sc_invisible=1; 
-        var sc_security="fde1fc98"; 
-    </script>
-    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript>
-        <div class="statcounter">
-            <a title="website statistics" href="https://statcounter.com/" target="_blank">
-                <img class="statcounter" src="https://c.statcounter.com/11601377/0/fde1fc98/1/" alt="website statistics">
-            </a>
-        </div>
-    </noscript>
-    <!-- End of Statcounter Code -->
 </body>
 </html>
