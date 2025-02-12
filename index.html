@@ -20,8 +20,7 @@
         body {
             min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             background: #0a0a0a;
             color: #fff;
             position: relative;
@@ -40,9 +39,16 @@
             opacity: 0.3;
         }
 
-        .content {
+        .main-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
             z-index: 2;
+        }
+
+        .content {
             text-align: center;
             width: 90%;
             max-width: 600px;
@@ -63,6 +69,20 @@
             margin-bottom: 0.75rem;
             font-size: 1.1rem;
             letter-spacing: 1px;
+        }
+
+        p a {
+            color: #fff;
+            text-decoration: underline;
+            padding: 0.2rem 0.4rem;
+            margin: -0.2rem -0.4rem;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        p a:hover {
+            background-color: #88ccff;
+            color: #0a0a0a;
         }
 
         p:last-of-type {
@@ -111,6 +131,35 @@
             stroke-width: 1.5;
         }
 
+        .footer {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+        
+        .footer-content {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 4px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.2rem 0.4rem;
+            transition: all 0.2s ease;
+            border-radius: 3px;
+        }
+
+        .footer a:hover {
+            background-color: #88ccff;
+            color: #0a0a0a;
+        }
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.75rem;
@@ -136,6 +185,10 @@
                 transform: none;
                 box-shadow: none;
             }
+
+            .footer {
+                font-size: 0.8rem;
+            }
         }
 
         @media (max-width: 360px) {
@@ -148,29 +201,38 @@
 <body>
     <canvas id="gameCanvas"></canvas>
     
-    <div class="content">
-        <h1>KARAN SHAH</h1>
-        <p>PhD Candidate at <a href="https://sites.google.com/view/mlmd" target="_blank" style="color: #fff !important">MLMD</a>, <a href="https://www.casus.science/" target="_blank" style="color: #fff !important">CASUS</a>, <a href="https://www.hzdr.de/db/Cms?pNid=0" target="_blank" style="color: #fff !important">HZDR</a></p>
-        <p>Physics-Informed ML for Density Functional Theory</p>
-        <div class="links">
-            <a href="https://karan.sh/res/shah-karan_CV.pdf" target="_blank" aria-label="CV">
-                <i data-lucide="file-user"></i>
-            </a>
-            <a href="https://scholar.google.com/citations?user=XaeCoXwAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
-                <i data-lucide="graduation-cap"></i>
-            </a>
-            <a href="https://github.com/karanprime" target="_blank" aria-label="GitHub">
-                <i data-lucide="github"></i>
-            </a>
-            <a href="https://twitter.com/ReKarantNetwork" target="_blank" aria-label="Twitter">
-                <i data-lucide="twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/karanprime/" target="_blank" aria-label="LinkedIn">
-                <i data-lucide="linkedin"></i>
-            </a>
-            <a href="mailto:k.shah@hzdr.de" aria-label="Email">
-                <i data-lucide="mail"></i>
-            </a>
+    <div class="main-container">
+        <div class="content">
+            <h1>KARAN SHAH</h1>
+            <p>PhD Candidate at <a href="https://sites.google.com/view/mlmd" target="_blank">MLMD</a>, <a href="https://www.casus.science/" target="_blank">CASUS</a>, <a href="https://www.hzdr.de/db/Cms?pNid=0" target="_blank">HZDR</a></p>
+            <p>Physics-Informed ML for Density Functional Theory</p>
+            <div class="links">
+                <a href="https://karan.sh/res/shah-karan_CV.pdf" target="_blank" aria-label="CV">
+                    <i data-lucide="file-user"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=XaeCoXwAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
+                    <i data-lucide="graduation-cap"></i>
+                </a>
+                <a href="https://github.com/karanprime" target="_blank" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://twitter.com/ReKarantNetwork" target="_blank" aria-label="Twitter">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/karanprime/" target="_blank" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:k.shah@hzdr.de" aria-label="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Background on the background</a> |
+            <a href="https://karan.sh/old_index">More about me</a>
         </div>
     </div>
 
@@ -276,22 +338,20 @@
         game.start();
     </script>
 
-<!-- Default Statcounter code for personal website
-http://www.karan.sh -->
-<script type="text/javascript">
-    var sc_project=11601377; 
-    var sc_invisible=1; 
-    var sc_security="fde1fc98"; 
+    <!-- Default Statcounter code -->
+    <script type="text/javascript">
+        var sc_project=11601377; 
+        var sc_invisible=1; 
+        var sc_security="fde1fc98"; 
     </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js"
-    async></script>
-    <noscript><div class="statcounter"><a title="website
-    statistics" href="https://statcounter.com/"
-    target="_blank"><img class="statcounter"
-    src="https://c.statcounter.com/11601377/0/fde1fc98/1/"
-    alt="website statistics"></a></div></noscript>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter">
+            <a title="website statistics" href="https://statcounter.com/" target="_blank">
+                <img class="statcounter" src="https://c.statcounter.com/11601377/0/fde1fc98/1/" alt="website statistics">
+            </a>
+        </div>
+    </noscript>
     <!-- End of Statcounter Code -->
-     
 </body>
 </html>
