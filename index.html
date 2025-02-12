@@ -236,6 +236,16 @@
             .links {
                 gap: 0.5rem;
             }
+
+            .footer-content {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .footer-content .divider {
+                display: none;
+            }
         }
 
         /* Handle devices with notches and home indicators */
@@ -279,7 +289,8 @@
 
     <div class="footer">
         <div class="footer-content">
-            <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Background on the background</a> |
+            <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Background on the background</a>
+            <span class="divider"> | </span>
             <a href="https://karan.sh/old_index" target="_blank">More about me</a>
         </div>
     </div>
