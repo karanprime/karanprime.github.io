@@ -1,282 +1,279 @@
-	<!doctype html>
-<html>
-<link rel="shortcut icon" type="image/x-icon" href="res/manhattan.ico"/>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>karan.sh</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="res/manhattan.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Shah - Physics-Informed ML Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            image-rendering: pixelated;
+            font-family: 'Doto', monospace;
+            font-weight: 900;
+        }
 
-	<link rel="shortcut icon" type="image/x-icon" href="res/manhattan.ico"/>
-	<link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0a0a0a;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.3;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 4px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #88ccff;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #fff;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        p:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            background: transparent;
+            border: 1px solid #88ccff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 3.5rem;
+            height: 3.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .links a:hover {
+            background: #88ccff;
+            color: #0a0a0a;
+            transform: translate(-2px, -2px);
+            box-shadow: 4px 4px 0 #0a0a0a;
+        }
+
+        .links a:active {
+            transform: translate(0, 0);
+            box-shadow: none;
+        }
+
+        .links a i {
+            width: 24px;
+            height: 24px;
+            stroke-width: 1.5;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            p {
+                font-size: 0.9rem;
+            }
+
+            .links {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(80px, 1fr));
+                gap: 0.75rem;
+                max-width: 320px;
+            }
+
+            .links a {
+                width: 100%;
+                aspect-ratio: 1;
+            }
+
+            .links a:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .links {
+                gap: 0.5rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<h1 id="karansh"><pre>~/karan.sh</pre></h1>
-
-<p class="author">Karan Shah <br>April 2023</p>
-<div class="abstract">
-<h2 id="abstract">Abstract</h2>
-</div>
-<p>
-I am a PhD candidate in the <a href="https://www.casus.science/research-areas/machine-learning-for-materials-design/">Machine Learning for Materials Design</a> group at the <a href="https://www.casus.science">Center for Advanced Systems Understanding
-(CASUS)</a>, <a href="https://www.hzdr.de/db/Cms?pNid=0">Helmholtz-Zentrum Dresden-Rossendorf (HZDR)</a> in Görlitz, Germany, under the supervision of Dr. Attila
-Cangi.<br>
-I work on accelerating quantum dynamics simulations through machine learning. My research goal is to develop
-Density Functional Theory (DFT) based simulation frameworks for electron dynamics for matter under extreme conditions.
-</p>	
-<p>I like to think about the promises and pitfalls of machine learning for science. This web page serves as my extended CV. I can elaborate on the details without the space constraints. You can reach out to me at <a href="mailto:k.shah@hzdr.de">k.shah@hzdr.de</a>.</p>
-<p><strong>CV</strong>: <a href="/res/shah-karan_CV.pdf">Link to my pdf CV (updated April 2024)</a></p><hr/>
-	<p><strong>Update Apr 2023</strong>: Attended an <a href="https://open.science-retreat.org">Open Science Retreat</a>. We studied the impact of LLMs for science. You can access the document <a href=https://wuqui.github.io/llms-and-open-science/#/page/llms%20and%20open%20science>here</a> and on <a href=https://github.com/wuqui/llms-and-open-science>GitHub</a>.</p>
-	<p><strong>Update Feb 2023</strong>: Announcing a new nuptial collaboration with my wonderful Co-PI. More information here: <a href="/res/web_wedding_invite_redacted.pdf">Wedding Invite</a></p>
-	<p><strong>Update Jan 2023</strong>: I have been selected once again as a <a href="https://dsecop.org">APS DSECOP Fellow.</a></p>
-	<p><strong>Update Oct 2022</strong>: Our work "Physics-Informed Neural Networks as Solvers for the Time-Dependent Schrödinger Equation" was accepted to the Machine Learning and the Physical Sciences workshop at NeurIPS 2022. Links: <a href="https://arxiv.org/abs/2210.12522">arXiv:2210.12522</a> </p>
-	<p><strong>Update Aug 2022</strong>: I am now part of the Helmholtz AI funded project <a href="https://www.casus.science/news/casus-news/seeking-a-faster-pathway-to-synthetic-data/">"SynRap – Machine-learning based synthetic data generation for rapid physics modeling"</a>
-	<p><strong>Update Apr 2022</strong>: Our work "Deep dive into machine learning density functional theory for materials science and chemistry" was published in Physical Review Materials. Links: <a href="https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.6.040301">Phys. Rev. Materials</a>, <a href="https://arxiv.org/abs/2110.00997">arXiv:2110.00997</a> </p>
-	<p><strong>Update Feb 2022</strong>: I received <a href="https://dsecop.org">APS DSECOP Fellowship</a> to develop data science/machine learning materials for the undergraduate physics curriculum.</a> </p>
-	<p><strong>Update Aug 2021</strong>: I moved to Germany to begin my PhD at <a href="https://www.casus.science">CASUS</a> </p>
-	<p><strong>Update Dec 2020</strong>: Our work "Fourier Spectrum Discrepancies in Deep Network Generated Images" was accepted to NeurIPS 2020. Links: <a href="https://proceedings.neurips.cc/paper/2020/hash/1f8d87e1161af68b81bace188a1ec624-Abstract.html">NeurIPS</a>, <a href="https://arxiv.org/abs/1911.06465">arXiv:1911.06465</a></p>
-<hr /><h2 id="other-places-on-the-web">Web Addresses</h2>
-<ul>
-<li>Mail: <a href="mailto:k.shah@hzdr.de">k.shah@hzdr.de</a></li>
-<li>Twitter: <a href="https://twitter.com/ReKarantNetwork">@ReKarantNetwork</a></li>
-<li>GitHub: <a href="https://github.com/karanprime">karanprime</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/karanprime/">karanprime</a></li>
-<li>Scholar: <a href="https://scholar.google.com/citations?user=XaeCoXwAAAAJ&hl=en&oi=ao">Karan Shah</a></li>
-<li>ORCID: <a href="https://orcid.org/0000-0002-5480-2880">0000-0002-5480-2880</a></li>
-</ul>
-<hr />
-<div class="TOC">
-<h2 id="toc_id">TOC</h2>
-<ul>
-<li><a href="#abstract">Abstract</a></li>
-<li><a href="#other-places-on-the-web">Web Addresses</a></li>
-<li><a href="#toc_id">TOC</a></li>
-<li><a href="#research">Research</a>
-
-<ul>
-<li><a href="#sciml">SciML</a></li>
-<li><a href="#cosmology">Cosmology</a></li>
-<li><a href="#computational-chemistry">Computational Chemistry</a></li>
-<li><a href="#ai-interpretability-and-societal-impact">AI Interpretability and societal impact</a></li>
-</ul></li>
-<li><a href="#selected-academic-projects">Selected Academic Projects</a></li>
-<li><a href="#tools-i-use">Tools I use</a>
-<li><a href="#teaching">Teaching</a></li>
-<li><a href="#service">Service</a></li>
-<li><a href="#coursework">Coursework</a></li>
-<li><a href="#misc">Misc</a></li>
-<li><a href="#anonfeedback">Anonymous Feedback</a></li>
-</ul></li>
-
-</div>
-
-<hr />
-
-<h2 id="research">Research</h2>
-
-<p>I am always excited to explore new fields. I am broadly interested and have worked in the following areas:</p>
-
-<h3 id="sciml">SciML</h3>
-
-<p>The intersection of scientific computing and machine learning is my favorite place to work in. I believe that machine learning techniques are a necessity for current and future data intensive experiments. ML techniques can also serve as surrogates for computationally expensive simulations. On the other hand, insights from physics could be helpful for interpretability and uncertainty quantification of ML models. </p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-
-<h3 id="cosmology">Cosmology</h3>
-
-<p>I worked at Lawrence Livermore National Laboratory (LLNL) under Dr. Michael Schneider during 2017-2019. Here is a overview of my projects:</p>
-
-<ul>
-<li><p>I joined LLNL as a fellow in their Data Science Summer Institute (DSSI). I worked with Dr. Michael Schneider on a Hierarchical Bayesian Model to solve the inverse problem of inferring cosmic shear and intrinsic galaxy properties from data that will be collected by the Large Synoptic Survey Telescope (LSST). I used Probabilistic Graphical Models and wrote MCMC algorithms (Metropolis Hastings within Gibbs) to infer the posterior distribution of cosmic shear and intrinsic ellipticity (shape) from observed galaxies in the weak lensing regime. I am now working on an extended hierarchical model incorporating non-shape galaxy properties like flux, Sersic profile and half light radius along with ellipticity. Our end goal is to determine the multivariate population statistics, including correlations amongst different properties of all four billion galaxies in LSST. I gave a talk on this project in the Bay Area LSST &amp; Machine Learning Meeting at UC Berkeley in December 2018.<br/>
-<a href="/res/LSST_presentation.pdf">Presentation</a>, <a href="/res/MCMC_IUQ_report.pdf">Short Class Report</a>, <a href="/res/LSST_poster.pdf">Old LLNL Symposium Poster</a></p></li>
-<li><p>Gaussian process for cosmological parameter estimation: It has been shown that certain gaussian process kernels are equivalent to infinitely wide deep neural networks while also providing robust uncertainty quantification. Under Dr. Schneider, I am also exploring the use of neural network equivalent Gaussian Processes (NNGPs) to estimate cosmological parameters (such as ratio of baryonic matter to dark matter) from observed 3D mass maps of galactic surveys. I am currently testing my pipeline on simulated toy models. The main challenges I face here are efficient representation of 3D volumes and improving Gaussian Process scalability.</p></li>
-</ul>
-
-<p>I also briefly worked in the Gravity group at Georgia Tech, on Gaussian Processes as surrogates for expensive gravitational wave simulations.</p>
-
-<p>During my undergrad, I worked in Otte group at GT on simulation code for large scale cosmic ray showers. I added functionality for creating new telescope models in GrOptics (specifically included Schwarzschild-Couder model for Chernekov Telescope Array). I also wrote scripts to run large scale HPC simulations.
-I received my first President's Undergraduate Research Award (PURA) for this work.<br/>
-<a href="https://github.com/groptics/groptics">GitHub Project Link</a> (I created the GrOptics GitHub account and repo)</p>
-
-<p>Really old: Here is a freshman year report that I am proud of. I observed the location of sunsets throughout the semester and explained the trends.<br/>
-<a href="/res/Sunset_report.pdf">Link to report</a> (115/100 points)</p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-
-<h3 id="computational-chemistry">Computational Chemistry</h3>
-
-<p>I worked with Professor Andrew Medford on deep learning approaches to density functional theory from 2017-2019. For my undergraduate thesis, I focused on the effectiveness of machine learning techniques in finding a unique mapping between the electron density and the exchange-correlation potential of a system. My current project is uncertainty quantification for machine learned surrogate functionals. I used bootstrap aggregation with an ensemble of weak learners (shallow neural nets) to perform uncertainty quantification. Concurrently, I am building a data management framework to make all stages of the machine learning workflow smoother on the Georgia Tech HPC clusters. I received my second President's Undergraduate Research Award (PURA) from Georgia Tech for this work in Fall 2017.<br/>
-<a href="https://smartech.gatech.edu/handle/1853/61364">Undergraduate Thesis</a></p>
-
-<p>For my <a href="https://www.cc.gatech.edu/~echow/cse8803asc-20.html">Advanced Scientific Computing class</a>, I worked on using neural network equivalent Gaussian Processes to solve the Schrödinger equation. I used it to solve the ground state energy for 2D electron systems. It works well with robust uncertainty quantification, but suffers from the scalability issues inherent to Gaussian Processes.<br/>
-Link to project report: <a href="http://karan.sh/GPNN_schrodingers_equation/">Gaussian Processes and the Schrodinger equation</a></p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-
-<h3 id="ai-interpretability-societal-impact">AI Interpretability &amp; Societal Impact</h3>
-
-<p>Complimentary to my SciML projects, I am also interested in interpretable machine learning. I feel that the black box nature of current deep models is not ideal for scientific discovery. I am looking into robust uncertainty quantification, Bayesian methods, etc. </p>
-
-<p>Along with collaborators from Texas A&amp;M University, I recently submitted a paper to <strong>NeurIPS 2020</strong>, on the difference in Fourier spectrum of real and generated images. We demonstrated a low (computational) cost technique to detect synthetic images, which could also be used to interpret GANs and VAEs.<br/>
-<a href="https://arxiv.org/abs/1911.06465">arXiv:1911.06465</a></p>
-
-<p>In order to better understand the societal impacts of AI, I am filling the social science gaps in my knowledge. I am currently enrolled in the excellent <a href="https://micromasters.mit.edu/dedp/">MIT Micromasters in Data, Economics and Developmental Policy program</a>. I am learning about the design of social experiments, which are sometimes trickier than the computational science experiments I am used to.</p>
-
-<p>Previously, as a member of the Data Driven Education team, I worked on statistical methods to tailor GT’s pioneering online courses to student performance. In my senior year, I led a team of junior undergrads and we presented one such scheme at the Georgia Tech STEM Education Research Expo.<br/>
-<a href="/res/STEMExpo_poster.pdf">Poster</a></p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-
-
-<h2 id="selected-academic-projects">Selected Academic Projects</h2>
-
-<p>I have been fascinated with cellular automata ever since I encountered Conway’s game of life in freshman year. This lead to adventures in non-linear dynamics (chaos theory). </p>
-
-<h4 id="neural-cellular-automata">Neural Cellular Automata</h4>
-
-<p>Currently, I am intrigued by <a href="https://distill.pub/2020/growing-ca/">neural cellular automata</a>. I have been playing around with it while under lockdown. I will post about my experiments soon.</p>
-
-<h4 id="emergent-phenomena">Emergent Phenomena</h4>
-
-<p>I took a great course on emergent phenomena with <a href="https://people.clarkson.edu/~lschulma/">Prof. L. S. Schulman</a> in Spring 2020. The class consisted of four students and the professor. I learnt about the relevance of statistical mechanics in a wide variety of fields (from finance to syncing fireflies). I gave a presentation of the emergence of Zipf’s law from simple assumptions about human settlements.<br/>
-You can find the presentation here: <a href="/res/GROW_presentation.pdf">Cities and Galaxies</a> Note: It ends with <em>aliens</em>.</p>
-
-<h4 id="reservoir-computing">Reservoir Computing</h4>
-
-<p>I worked on “predicting” chaotic systems as a project in my <a href="https://www.cc.gatech.edu/classes/AY2019/cs7643_fall/">deep learning class</a>. Inspired by <a href="https://www.quantamagazine.org/machine-learnings-amazing-ability-to-predict-chaos-20180418/">this article</a> and the linked papers, I explored the use of reservoir computing for predicting time series. It worked excellently for repeating series, but also worked eerily well for chaotic systems.<br/>
-Draft here: <a href="http://karan.sh/TiamathsPool/">Tiamath's Swimming Pool</a> (plan on going beyond preliminary results some day, sigh)</p>
-
-<h4 id="wolfram-summer-school">Wolfram Summer School</h4>
-
-<p>I was fortunate to be accepted into Wolfram Summer School 2016. It was an intense experience with some of the brightest people I have met. I worked on automatic classification of cellular automata, under Dr. Georgia Fortuna, with some advice from Stephen Wolfram. I got inducted in the cult of Mathematica (feels so good when you solve a complicated problem with a paragraph long one liner, which feels great when you write it, but takes 20 minutes to decipher when you read it two years later) and functional programming.<br/>
-<a href="https://education.wolfram.com/summer/school/alumni/2016/shah/">Alumni Link</a>, <a href="https://github.com/karanprime/mlforca">GitHub Repo</a></p>
-
-<h4 id="migration-modeling">Migration Modeling</h4>
-
-<p>I combined cellular automata (Schelling's Segregation Model) and n-body simulation (Barnes-hut algorithm) to model population movement, taking into account multiple factors such as wealth, race etc.<br/>
-<a href="https://github.com/karanprime/MigrationSimulator">GitHub Repo</a></p>
-
-<h4 id="chuas-circuit">Chua's Circuit</h4>
-
-<p>For my electronics class, I made Chua’s circuit. It exhibits chaotic behavior. Looking at phase plots on a three decade old oscillator (because newer digital ones can't handle that) was the highlight of my course. I also wrote a small matlab simulator.<br/>
-Here’s a short report:
-<a href="/res/Chua_Circuit_report.pdf">Chua's Circuit: A chaotic analog computer</a> (contains pretty phase plots)</p>
-
-<h4 id="cellular-automata-simulator">Cellular Automata Simulator</h4>
-
-<p>I wrote a cellular automata simulator in Java for my computational physics class, complete with an Arduino implementation on rings and grids of LEDs.<br/>
-<a href="https://github.com/karanprime/Cellular-Automata-Project">GitHub repo</a>, <a href="/res/CA_Java_report.pdf">Report</a> </p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-<h2 id="tools-i-use">Tools I Use</h2>
-
-<p>In decreasing order of proficiency:</p>
-
-<p><strong>Python</strong>: Bread and butter. I use the “data-science stack” (numpy, scipy et al) everyday. I alternate between TF and PyTorch depending on the project. I experiment with code in Jupyter notebooks and convert finished code into modules (sometimes). I am very comfortable with python, but need to learn better testing and documentation practices.</p>
-
-<p><strong>Mathematica</strong>: I use it for hairy math problems. I also use it because it is always satisfying to get non trivial things done with a few function calls. </p>
-
-<p><strong>Matlab</strong>: Mostly use it for coursework that requires matlab.</p>
-
-<p><strong>Julia</strong>: More out of intellectual curiosity. It has an active scientific computing community and claims to combine the ease of python with the performance of C.</p>
-
-<p><strong>C, C++</strong>: Used it for GrOptics. Also for learning HPC (MPI) and my systems and networking classes. I can get things done after many Stack Overflow look ups.</p>
-
-<p><strong>Java</strong>: Language of choice when starting out my degree. Learn OOP on Java and C++. Can’t believe I wrote a GUI cellular automata simulator in it a long time ago. Won’t be able to do that today.</p>
-
-<p><strong>R</strong>: Trying it for my social science classes. It feels like a lower friction way to do statistics than python.</p>
-
-<p><strong>FORTRAN</strong>: Tried it for that one physics professor who won't use anything else. Don’t remember it at all now.</p>
-
-<h3 id="others">Others</h3>
-
-<p><strong>Shell Scripting</strong>: Writing good bash scripts is an under appreciated skill. These are helpful for managing multiple simulations and making sure ML pipelines work smoothly.</p>
-
-<p><strong><span class="latex">L<span>a</span>T<span>e</span>X</span></strong>: Documents look beautiful, once I figure out how to put that image below the paragraph I want.</p>
-
-<p><strong>Hardware</strong>: I am comfortable with basic electronics and soldering. I like tinkering with Arduino and Raspberry Pi boards. I recently setup a <a href="https://github.com/pi-hole/pi-hole">pi-hole</a> for my home network. I also built my own PC for deep learning and gaming, christened <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">ada</a>.</p>
-
-<p><strong>Some HTML/CSS</strong>: Mostly to make personal websites, and to look for easter eggs on Mr. Robot and Westworld websites. Hugo and Jupyter and Markdown are easier for me. </p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-
-<h2 id="teaching">Teaching</h2>
-
-<p>I have been a teaching assistant in the following courses:</p>
-
-<ul>
-<li><a href="https://www.cc.gatech.edu/fac/Constantinos.Dovrolis/Courses/cs3510-S20.html"><strong>CS 3510 Design and Analysis of Algorithms</strong></a>, Prof. Constantine Dovrolis, <em>Spring 2020</em></li>
-<li><strong>CSE 6730 Modeling and Simulation: Fundamentals &amp; Implementation</strong>, Prof. Richard Fujimoto and Prof. Richard Vuduc, <em>Spring 2019</em></li>
-<li><a href="https://www.cc.gatech.edu/~rpeng/CS4510_F18/"><strong>CS 4510 Automata and Complexity</strong></a>, Prof. Richard Peng, <em>Fall 2018</em></li>
-</ul>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-
-<h2 id="service">Service</h2>
-
-<p>I believe that giving back is an important part of a career in science. As a lowly grad student, I try to volunteer wherever I can. Some of the highlights are:</p>
-
-<ul>
-<li>Volunteered at ICML 2020 (remote, IST)</li>
-<li>Volunteered at ICLR 2019, New Orleans</li>
-<li>Student travel award to WSSSPE 14 in Manchester</li>
-<li>Student travel award to JupyterCon.</li>
-</ul>
-
-<p>I serve as a reviewer for President’s Undergraduate Research Award in the fields of physics and computer science.</p>
-
-<p>I was also elected Senator to the Graduate Student Senate from the School of Computational Science &amp; Engineering for 2018-2019 and 2019-2020.</p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-<h2 id="coursework">Coursework</h2>
-
-<p><a href="coursework.html"><strong>List of relevant courses</strong></a></p>
-
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-<h2 id="misc">Misc</h2>
-
-<p>In my youth (6 years ago in 2014), I experimented with a start up, cryptomen.com (the website is dead, we had some articles about us though). It was five of us scattered throughout North America, and we traded crypto currencies back when bitcoin was about $400. We raised about $47000 from individual investors. I learnt a lot about crypto currencies, dealing with people, marketing and trading stresses.<br/>
-<a href="http://cryptomen.com/about-cryptomen/">Dead domain</a>, <a href="https://cointelegraph.com/news/cryptomen-launches-breakthrough-btc-investment-trading-service">an article about us</a></p>
-
-<p>I also cofounded Georgia Tech's first Cryptocurrency club around that time. We invited people in Atlanta's cryptocurrency scene to give talks at GT, left 3D printed wallets with 0.0000001 BTC at random spots around campus and just spread awareness about cryptocurrencies in general.</p>
-
-<p>In high school, I made a Jarvis like voice automation system with a friend. This was 2010, before Siri and AWS and home automation were cool. The whole system was made out of junk parts. An ancient desktop with a parallel port was the brain. The parallel port pins were connected to relays which were driving the mains current to various appliances. We used the hilariously bad Windows speech recognition to manipulate some cmd scripts which turned the parallel pins on and off. As stupid teenagers, we had open mains lines on the floor. I am happy to be alive.<br/>
-<a href="https://www.youtube.com/watch?v=b5b3MGruSlI">Embarrassing video</a></p>
-<hr />
-<small><a href="#karansh" style="float: right;">Back to Top</a></small>
-
-<h2 id="anonfeedback"> Feedback </h6>
-<p> Feel free to submit anonymous feedback <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvjm3gC4CJODpDarVXeCiosJTjpRmRxh1bGK3jtsLeQ23FMA/viewform?usp=sf_link">on this form</a>.</p>
-<hr />
-
-<!-- Default Statcounter code for personal website
-http://www.karan.sh -->
-<script type="text/javascript">
-var sc_project=11601377; 
-var sc_invisible=1; 
-var sc_security="fde1fc98"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="website
-statistics" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/11601377/0/fde1fc98/1/"
-alt="website statistics"></a></div></noscript>
-<!-- End of Statcounter Code -->
+    <canvas id="gameCanvas"></canvas>
+    
+    <div class="content">
+        <h1>KARAN SHAH</h1>
+        <p>PhD Candidate at CASUS, HZDR</p>
+        <p>Physics-Informed ML for Density Functional Theory</p>
+        <div class="links">
+            <a href="https://karan.sh/res/shah-karan_CV.pdf" target="_blank" aria-label="CV">
+                <i data-feather="file-text"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=XaeCoXwAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
+                <i data-feather="book-open"></i>
+            </a>
+            <a href="https://github.com/karanprime" target="_blank" aria-label="GitHub">
+                <i data-feather="github"></i>
+            </a>
+            <a href="https://twitter.com/ReKarantNetwork" target="_blank" aria-label="Twitter">
+                <i data-feather="twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/karanprime/" target="_blank" aria-label="LinkedIn">
+                <i data-feather="linkedin"></i>
+            </a>
+            <a href="mailto:k.shah@hzdr.de" aria-label="Email">
+                <i data-feather="mail"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+
+        class GameOfLife {
+            constructor(canvas) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+                this.cellSize = 12;
+                this.lastUpdate = 0;
+                this.updateInterval = 100;
+                this.resize();
+                
+                this.grid = Array(this.rows).fill().map(() => 
+                    Array(this.cols).fill().map(() => Math.random() > 0.85)
+                );
+                
+                window.addEventListener('resize', () => this.resize());
+                this.animate = this.animate.bind(this);
+            }
+            
+            resize() {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+                this.cols = Math.ceil(this.canvas.width / this.cellSize);
+                this.rows = Math.ceil(this.canvas.height / this.cellSize);
+                
+                const newGrid = Array(this.rows).fill().map(() => 
+                    Array(this.cols).fill().map(() => Math.random() > 0.85)
+                );
+                this.grid = newGrid;
+            }
+            
+            countNeighbors(grid, x, y) {
+                let count = 0;
+                for (let i = -1; i <= 1; i++) {
+                    for (let j = -1; j <= 1; j++) {
+                        if (i === 0 && j === 0) continue;
+                        const row = (x + i + this.rows) % this.rows;
+                        const col = (y + j + this.cols) % this.cols;
+                        if (grid[row][col]) count++;
+                    }
+                }
+                return count;
+            }
+            
+            update() {
+                const newGrid = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
+                
+                for (let i = 0; i < this.rows; i++) {
+                    for (let j = 0; j < this.cols; j++) {
+                        const neighbors = this.countNeighbors(this.grid, i, j);
+                        if (this.grid[i][j]) {
+                            newGrid[i][j] = neighbors === 2 || neighbors === 3;
+                        } else {
+                            newGrid[i][j] = neighbors === 3;
+                        }
+                    }
+                }
+                
+                this.grid = newGrid;
+            }
+            
+            draw() {
+                this.ctx.fillStyle = '#0a0a0a';
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                this.ctx.fillStyle = '#64b5f6';
+                for (let i = 0; i < this.rows; i++) {
+                    for (let j = 0; j < this.cols; j++) {
+                        if (this.grid[i][j]) {
+                            this.ctx.fillRect(
+                                j * this.cellSize, 
+                                i * this.cellSize, 
+                                this.cellSize - 1, 
+                                this.cellSize - 1
+                            );
+                        }
+                    }
+                }
+            }
+            
+            animate(timestamp) {
+                if (timestamp - this.lastUpdate >= this.updateInterval) {
+                    this.update();
+                    this.lastUpdate = timestamp;
+                }
+                this.draw();
+                requestAnimationFrame(this.animate);
+            }
+            
+            start() {
+                this.animate(0);
+            }
+        }
+
+        // Start the Game of Life
+        const canvas = document.getElementById('gameCanvas');
+        const game = new GameOfLife(canvas);
+        game.start();
+    </script>
 </body>
-<footer>
-
-Last updated April 2023. Made with markdown(<a href="https://ia.net/writer">iA Writer</a>, <a href="https://obsidian.md">Obsidian</a>), and <a href="https://latex.now.sh"><span class="latex">L<span>a</span>T<span>e</span>X</span>.css</a>
-</footer>
 </html>
